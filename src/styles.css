@@ -1,0 +1,200 @@
+.App {
+  font-family: sans-serif;
+  background-color: white;
+}
+.App * {
+  margin: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0 64px;
+}
+
+.upload-remove-container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 40%;
+  margin: auto;
+}
+.upload-remove-container > * {
+  margin: 4px 0;
+}
+.std-button {
+  background-color: white;
+  border: 1.5px solid black;
+}
+.std-button:hover {
+  cursor: pointer;
+  background-color: gainsboro;
+}
+.drag-button {
+  width: 100%;
+  height: 256px;
+  font-size: 1.4em;
+  border-style: dashed;
+}
+.drag-button:hover {
+  text-decoration: underline;
+  background-color: white;
+}
+.remove-button {
+  height: 48px;
+  font-size: 1.4em;
+}
+
+.settings-container {
+  margin: 4px 0;
+}
+.settings-container .label {
+  margin-right: 8px;
+}
+.image-width-chooser {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.settings-container .options {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.settings-container .options label {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-right: 10px;
+}
+.settings-container .options input {
+  margin-right: 3px;
+}
+.import-export-container {
+  margin: 8px 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.export-button, .import-container {
+  margin-right: 12px;
+}
+.import-export-status {
+  font-size: 0.8em;
+}
+
+.players-input-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 32px 0 16px;
+}
+.fighter-input-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 0 12px;
+}
+.fighter-actual-label {
+  text-align: center;
+}
+.fighter-label {
+  font-size: 0.8em;
+  color: gray;
+  width: fit-content;
+}
+.fighter-name-input {
+  font-size: 2.5em;
+  width: 8em;
+  text-align: center;
+  margin-top: 2px;
+}
+.fighter-damages-input-container {
+  margin-top: 16px;
+}
+.fighter-damage-input {
+  font-size: 2.2em;
+  width: 0.6em;
+  margin: 0 8px;
+  caret-color: transparent;
+}
+
+.image-row-number {
+  font-size: 1.5em;
+  padding-right: 8px;
+}
+.main-table {
+  margin-top: 16px;
+}
+.main-table th {
+  font-weight: normal;
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 8px;
+}
+.image-item {
+  padding-right: 32px;
+}
+.image-item img {
+  border: 1.5px solid black;
+}
+
+table {
+  position: relative;
+}
+tr > th:nth-child(3) {
+  border-right: 2px solid black;
+}
+tr > th:nth-child(3), tr > th:nth-child(4) {
+  border-bottom: 2px solid black;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+tr > td:nth-child(3) {
+  border-right: 2px solid black;
+}
+tr > td:nth-child(3), tr > td:nth-child(4) {
+  padding: 0 32px;
+  border-bottom: 2px solid black;
+}
+
+.dmg-cell {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.current-score-selectors {
+  margin: 4px 8px 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.score-selector-button {
+  font-size: 1.5em;
+  margin: 0 2px;
+  background-color: white;
+  border: 1.5px solid black;
+}
+.score-selector-button:hover {
+  cursor: pointer;
+  background-color: gainsboro;
+}
+.exchange-stats-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.exchange-stats-container > .stats-container {
+  padding: 0 6px;
+}
+.stats-container {
+  margin-top: 6px;
+}
+.stats-label {
+  font-size: 0.9em;
+  color: gray;
+  text-align: center;
+}
+.stats-num {
+  font-size: 2em;
+  text-align: center;
+}
+.stats-num-comparison {
+  font-size: 0.6em;
+}
